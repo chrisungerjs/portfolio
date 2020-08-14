@@ -159,10 +159,6 @@ body {
   outline: none;
 }
 
-.Nav__theme .fa-lightbulb {
-  padding: .25rem;
-}
-
 .Nav__nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,5 +182,71 @@ body {
   text-decoration: none;
   background: white;
   color: #212529;
+}
+
+.Landing {
+  min-block-size: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0))), url("https://images.unsplash.com/photo-1580812528693-ebc601b9baf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed;
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1580812528693-ebc601b9baf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.Landing__hero {
+  block-size: 18rem;
+  inline-size: 40rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 750px) {
+  .Landing__hero {
+    inline-size: 20rem;
+    top: 40%;
+    margin: 0 auto;
+  }
+}
+
+.Landing__hero__title {
+  font-family: Helvetica, "Roboto", Calibri, Arial, Tahoma, sans-serif;
+  font-size: 6rem;
+  font-weight: 1000;
+  letter-spacing: .01em;
+}
+
+.Landing__hero__subtitle {
+  font-family: Helvetica, "Roboto", Calibri, Arial, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  margin-top: .75rem;
+}
+
+.Social {
+  display: inline;
+}
+
+.Social__link {
+  color: #212529;
+}
+
+.Social__link:hover {
+  color: rgba(33, 37, 41, 0.95);
+}
+
+.Social__icon {
+  font-size: 3rem;
+  margin: 1rem 2rem;
+}
+
+.Footer {
+  block-size: 3rem;
+  text-align: right;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.94);
+  padding-right: .25rem;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

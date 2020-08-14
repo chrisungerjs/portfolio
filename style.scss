@@ -35,9 +35,6 @@ body {
             border: none;
             outline: none;
         }
-        .fa-lightbulb {
-            padding: .25rem;
-        }
     }
     &__nav-bar {
         display: flex;
@@ -57,4 +54,66 @@ body {
             }
         }
     }
+}
+
+.Landing {
+    min-block-size: 100vh;
+    background: 
+        linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .25), rgba(0, 0, 0, 0)),   
+        url('https://images.unsplash.com/photo-1580812528693-ebc601b9baf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') 
+        no-repeat 
+        center 
+        center 
+        fixed;
+    background-size: cover;
+    position: relative;
+    &__hero {
+        block-size: 18rem;
+        inline-size: 40rem;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media screen and (max-width: 750px) {
+            inline-size: 20rem;
+            top: 40%;
+            margin: 0 auto;
+        }
+        &__title {
+            font-family: $helvetica;
+            font-size: 6rem;
+            font-weight: 1000;
+            letter-spacing: .01em;
+        }
+        &__subtitle {
+            font-family: $helvetica;
+            font-size: 1.5rem;
+            margin-top: .75rem;
+        }
+    }
+}
+
+
+.Social {
+    display: inline;
+    &__link {
+        color: rgba(33, 37, 41, 1);
+        &:hover {
+            color: rgba(33, 37, 41, .95);
+        }
+    }
+    &__icon {
+        font-size: 3rem;
+        margin: 1rem 2rem;
+    }
+}
+
+.Footer {
+    block-size: 3rem;
+    text-align: right;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.94);
+    padding-right: .25rem;
+    bottom: 0;
 }
