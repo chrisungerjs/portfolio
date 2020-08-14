@@ -230,6 +230,7 @@ body {
 }
 
 .Social__link {
+  text-decoration: none;
   color: #212529;
 }
 
