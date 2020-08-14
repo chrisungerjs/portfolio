@@ -1,0 +1,60 @@
+@import 'sass/reset';
+@import 'sass/fonts';
+@import 'sass/colors';
+@import 'sass/components';
+@import 'sass/theme';
+// @import 'sass/debug';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $roboto;
+}
+
+.Nav {
+    inline-size: 100%;
+    position: fixed;
+    top: 0;
+    background: $shark;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10000;
+    &__theme {
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: $white;
+        font-size: 1.5rem;
+        padding: .1rem .5rem;
+        &:hover {
+            filter: brightness(85%);
+        }
+        &:focus {
+            border: none;
+            outline: none;
+        }
+        .fa-lightbulb {
+            padding: .25rem;
+        }
+    }
+    &__nav-bar {
+        display: flex;
+        align-items: center;
+        a {
+            font-family: $roboto;
+            block-size: 100%;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $white;
+            padding: .5rem 1rem;
+            position: relative;
+            &:hover {
+                text-decoration: none;
+                background: $white;
+                color: $shark;
+            }
+        }
+    }
+}

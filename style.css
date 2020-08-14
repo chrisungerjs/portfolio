@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+.header {
+  font-family: "Roboto", Helvetica, Calibri, Arial, Tahoma, sans-serif;
+  inline-size: auto;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 1000;
+  letter-spacing: .01rem;
+  margin: 0 auto;
+}
+
+.App.DARK {
+  background-color: black;
+}
+
+.Nav.DARK {
+  color: #000;
+  background-color: white;
+}
+
+.Nav.DARK nav a {
+  color: black;
+  background-color: white;
+}
+
+.Nav.DARK nav a:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.Nav.DARK button i {
+  color: #000;
+}
+
+.Landing.DARK {
+  color: white;
+  background-color: black;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.8))), url("https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+.Landing.DARK i {
+  color: white;
+}
+
+.Portfolio.DARK {
+  color: white;
+  background-color: black;
+}
+
+.Portfolio.DARK main {
+  color: #000;
+}
+
+.Portfolio.DARK main div {
+  background: -webkit-gradient(linear, left bottom, left top, from(#222), color-stop(black), to(black));
+  background: linear-gradient(to top, #222, black, black);
+  color: #000;
+}
+
+.Portfolio.DARK main div h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.Portfolio.DARK main div p {
+  color: white;
+}
+
+.Portfolio.DARK main div aside a, .Portfolio.DARK main div aside i {
+  color: white;
+}
+
+.Blog.DARK {
+  color: white;
+  background-color: black;
+}
+
+.BigPost.DARK {
+  background-color: black;
+}
+
+.BigPost.DARK article {
+  color: white;
+}
+
+.BigPost.DARK article div div {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.SmallPosts.DARK a h3, .SmallPosts.DARK a h5 {
+  color: white;
+}
+
+.Footer.DARK {
+  color: #000;
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Calibri, Arial, Tahoma, sans-serif;
+}
+
+.Nav {
+  inline-size: 100%;
+  position: fixed;
+  top: 0;
+  background: #212529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10000;
+}
+
+.Nav__theme {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 1.5rem;
+  padding: .1rem .5rem;
+}
+
+.Nav__theme:hover {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+}
+
+.Nav__theme:focus {
+  border: none;
+  outline: none;
+}
+
+.Nav__theme .fa-lightbulb {
+  padding: .25rem;
+}
+
+.Nav__nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Nav__nav-bar a {
+  font-family: "Roboto", Helvetica, Calibri, Arial, Tahoma, sans-serif;
+  block-size: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+.Nav__nav-bar a:hover {
+  text-decoration: none;
+  background: white;
+  color: #212529;
+}
+/*# sourceMappingURL=style.css.map */
