@@ -134,6 +134,9 @@ body {
 
 .Portfolio {
     min-block-size: 100vh;
+    @media screen and (max-width: 750px) {
+        padding-bottom: 1rem;
+    }
     &__header {
         padding-top: 3rem;
     }
@@ -247,5 +250,4 @@ body {
     color: $white;
     background-color: rgba(0, 0, 0, 0.94);
     padding-top: 1rem;
-    bottom: 0;
 }

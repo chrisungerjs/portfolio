@@ -246,6 +246,12 @@ body {
   min-block-size: 100vh;
 }
 
+@media screen and (max-width: 750px) {
+  .Portfolio {
+    padding-bottom: 1rem;
+  }
+}
+
 .Portfolio__header {
   padding-top: 3rem;
 }
@@ -422,6 +428,5 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, 0.94);
   padding-top: 1rem;
-  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
