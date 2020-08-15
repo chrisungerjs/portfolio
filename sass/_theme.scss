@@ -25,8 +25,8 @@
 .Landing.DARK {
     color: $white;
     background-color: black;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, .8)), url('../images/landing_dark.jpeg');
-    i {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('../images/landing_dark.jpg');
+    i, h1 {
         color: $white;
     }
 }

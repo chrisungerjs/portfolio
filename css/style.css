@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -17,16 +16,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
-}
-
-.header {
-  font-family: "Roboto", Helvetica, Calibri, Arial, Tahoma, sans-serif;
-  inline-size: auto;
-  text-align: center;
-  font-size: 2.25rem;
-  font-weight: 1000;
-  letter-spacing: .01rem;
-  margin: 0 auto;
 }
 
 .App.DARK {
@@ -55,11 +44,11 @@ body {
 .Landing.DARK {
   color: white;
   background-color: black;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.8))), url("../images/landing_dark.jpeg");
-  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.8)), url("../images/landing_dark.jpeg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.5))), url("../images/landing_dark.jpg");
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)), url("../images/landing_dark.jpg");
 }
 
-.Landing.DARK i {
+.Landing.DARK i, .Landing.DARK h1 {
   color: white;
 }
 
@@ -110,6 +99,7 @@ body {
   position: fixed;
   top: 0;
   background: #212529;
+  opacity: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,6 +116,7 @@ body {
   color: white;
   font-size: 1.5rem;
   padding: .1rem .5rem;
+  cursor: pointer;
 }
 
 .Nav__theme:hover {
@@ -165,8 +156,8 @@ body {
 
 .Landing {
   min-block-size: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0))), url("images/landing.jpeg") no-repeat center center fixed;
-  background: linear-gradient(to top, white, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0)), url("images/landing.jpeg") no-repeat center center fixed;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(rgba(255, 255, 255, 0.25)), to(rgba(0, 0, 0, 0))), url("../images/landing.jpeg") no-repeat center center fixed;
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0)), url("../images/landing.jpeg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -191,10 +182,18 @@ body {
 }
 
 .Landing__hero__title {
+  color: #212529;
   font-family: Helvetica, "Roboto", Calibri, Arial, Tahoma, sans-serif;
   font-size: 6rem;
   font-weight: 1000;
   letter-spacing: .01em;
+}
+
+@media screen and (max-width: 750px) {
+  .Landing__hero__title {
+    line-height: 1;
+    margin: 1rem auto;
+  }
 }
 
 .Landing__hero__subtitle {
@@ -203,11 +202,18 @@ body {
   margin-top: .75rem;
 }
 
+@media screen and (max-width: 750px) {
+  .Landing__hero__subtitle {
+    padding: 1.5rem;
+  }
+}
+
 .Social {
   display: inline;
 }
 
 .Social__link {
+  text-decoration: none;
   color: #212529;
 }
 
@@ -216,8 +222,24 @@ body {
 }
 
 .Social__icon {
-  font-size: 3rem;
-  margin: 1rem 2rem;
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .Social__icon {
+    margin: 1rem;
+  }
+}
+
+.header {
+  font-family: "Roboto", Helvetica, Calibri, Arial, Tahoma, sans-serif;
+  inline-size: auto;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 1000;
+  letter-spacing: .01rem;
+  margin: 0 auto;
 }
 
 .Portfolio {
