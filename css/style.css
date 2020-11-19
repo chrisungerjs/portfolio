@@ -44,8 +44,8 @@ body {
 .Landing.DARK {
   color: white;
   background-color: black;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.5))), url("../images/landing_dark.jpg");
-  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)), url("../images/landing_dark.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.5))), url("../images/landing_dark.webp");
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)), url("../images/landing_dark.webp");
 }
 
 .Landing.DARK i, .Landing.DARK h1 {
@@ -146,10 +146,10 @@ body {
   color: white;
   padding: .5rem 1rem;
   position: relative;
+  text-decoration: none;
 }
 
 .Nav__nav-bar a:hover {
-  text-decoration: none;
   background: white;
   color: #212529;
 }

@@ -49,8 +49,8 @@ body {
             color: $white;
             padding: .5rem 1rem;
             position: relative;
+            text-decoration: none;
             &:hover {
-                text-decoration: none;
                 background: $white;
                 color: $shark;
             }
@@ -61,8 +61,12 @@ body {
 .Landing {
     min-block-size: 100vh;
     background: 
-        linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .25), rgba(0, 0, 0, 0)),   
-        url('../images/landing.jpeg') 
+        linear-gradient(
+            to top,
+            rgba(255, 255, 255, 1), 
+            rgba(255, 255, 255, .25),
+            rgba(0, 0, 0, 0)
+        ), url('../images/landing.jpeg')
         no-repeat 
         center 
         center 
@@ -232,7 +236,6 @@ body {
     }
 }
 
-// project card positioning and initial state
 .project_1 {
     grid-area: 1 / 1 / 8 / 11;
 }
